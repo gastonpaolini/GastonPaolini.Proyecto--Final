@@ -1,0 +1,1021 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Archivo:wght@200&family=Bebas+Neue&family=Bitter:ital,wght@0,100;0,200;1,100&family=Bruno+Ace+SC&family=Castoro+Titling&family=Delicious+Handrawn&family=Great+Vibes&family=Indie+Flower&family=Instrument+Serif:ital@0;1&family=Karla:wght@300&family=Libre+Baskerville&family=Lobster&family=Nova+Oval&family=Oswald:wght@200&family=PT+Sans+Narrow:wght@400;700&family=Pacifico&family=Poltawski+Nowy:ital@0;1&family=Raleway:wght@100&family=Red+Hat+Display:ital,wght@0,300;1,300&family=Righteous&family=Roboto:wght@100&family=Satisfy&family=Source+Serif+Pro:wght@200&family=Ysabeau:ital,wght@0,200;1,200&display=swap');
+
+
+//font-family: 'Archivo', sans-serif;
+//font-family: 'Bitter', serif;
+//font-family: 'Castoro Titling', cursive;
+//font-family: 'Great Vibes', cursive;
+//font-family: 'Instrument Serif', serif;
+//font-family: 'Libre Baskerville', serif ;
+//font-family: 'Poltawski Nowy', serif ;
+//font-family: 'PT Sans Narrow', sans-serif ;
+//font-family: 'Raleway', sans-serif;
+//font-family: 'Source Serif Pro', serif;
+//font-family: 'Ysabeau', sans-serif; 
+//font-family: "Karla", sans-serif;
+
+//Variables de color
+
+$color1: #5079F2;
+$color2: #f25252;
+$color3: #f27e7e;
+$color4: #f2f2f2;
+$color5: #595959;
+$colorform: #1a1a1ab7;
+
+
+//Variables de letra
+$font1:'Archivo',
+sans-serif;
+$font2:'Bitter',
+serif;
+$font3:'Castoro Titling',
+cursive;
+$font4:'Great Vibes',
+cursive;
+$font5:'Instrument Serif',
+serif;
+$font6:'Libre Baskerville',
+serif;
+$font7:'Poltawski Nowy',
+serif;
+$font8:'PT Sans Narrow',
+sans-serif;
+$font9:'Raleway',
+sans-serif;
+$font10:'Source Serif Pro',
+serif;
+$font11:'Ysabeau',
+sans-serif;
+$font12: "Karla",
+sans-serif;
+
+body {
+    height: calc(100vh - 80px);
+}
+
+.principal {
+    background-image: url(./Background/background4.jpg) !important;
+    background-size: cover;
+    background-position: center;
+    height: 100%
+}
+
+.principalbio {
+    background-image: url(./Background/background11.png);
+    background-size: cover;
+    background-position: inherit;
+    height: auto;
+
+}
+
+.principalcontacto {
+    background-image: url(./Background/background2.png);
+}
+
+.principalshow {
+    background-image: url(./Background/background6.png);
+    background-size: cover;
+}
+
+.principalmedia {
+    background-color: #1a1a1a;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px;
+    margin: 0px;
+}
+
+.animate__animated {
+    animation-delay: 1s;
+
+    &.animate__backInLeft {
+        animation-delay: 2s;
+        animation-duration: 3s;
+    }
+
+    &.animate_animate__backInDown {
+        animation-delay: 1s;
+        animation-duration: 3s;
+    }
+
+    &.animate__fadeInLeftBig {
+        animation-delay: 2.5s;
+        animation-duration: 3s;
+    }
+
+    &.animate__zoomIn {
+        animation-delay: 3.5s;
+        animation-duration: 3s
+    }
+}
+
+
+#logo {
+    border-radius: 45%;
+    border: solid 5px $color4;
+    height: 150px;
+    width: 600p;
+    border: 3px solid $color1;
+    transition: all 0.9s;
+    filter: grayscale(100%);
+}
+
+#logo:hover {
+    transition: all 0.9s;
+    border-radius: 20%;
+    filter: grayscale(0%);
+}
+
+.collapse {
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-toggler {
+    padding-left: 70px;
+    border: none;
+    font-size: 30px;
+    color: $color4;
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-nav {
+    z-index: +1;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: $color4;
+    transition: all 1.5s;
+    font-size: 32px;
+    display: flex;
+    justify-content: right;
+    -webkit-text-stroke: 0.25px $color1;
+    font-family: $font12;
+    display: flex;
+    justify-content: end;
+}
+
+.nav-link:hover {
+    transition: all 1.5s;
+    font-size: 45px;
+    text-shadow: 0 0 3px $color2;
+    color: $color2 !important;
+    -webkit-text-stroke: 1px $color3;
+}
+
+a {
+    color: $color4;
+    text-decoration: none;
+    margin: 30px;
+}
+
+a:hover {
+    color: $color5;
+}
+
+.boton {
+    text-align: center;
+}
+
+.boton1 {
+    position: absolute;
+    right: 20vw;
+    bottom: 16vh;
+    background-color: $color2;
+    color: $color4;
+    height: 50px;
+    width: 300px;
+    font-family: $font12;
+    place-items: center;
+    font-size: 30px;
+    border-radius: 12px;
+    border: solid 2px $color3;
+    text-shadow: 0 0 5px #1a1a1a;
+    text-decoration: none;
+    filter: grayscale(1);
+}
+
+.boton1:hover {
+    box-shadow: 0 0 5px $color4;
+    text-decoration: none;
+    color: $color4;
+    text-shadow: 0 0 5px $color4;
+    filter: grayscale(0);
+}
+
+//__________________________________________________________________________________________________________
+
+.presentacion {
+    background-color: $color5;
+    height: 125vh;
+}
+
+.volver {
+    display: grid;
+    grid-template-columns: 7fr 7fr 2fr 4fr;
+    grid-template-rows: auto;
+    grid-template-areas: "area1 area2 area3 area4";
+}
+
+.volver1 {
+    grid-area: area3;
+    text-decoration: none;
+    background-color: $color1;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    font-size: 30px;
+    font-family: $font12;
+    border-radius: 10px;
+    border: solid 1px $color4;
+    display: flex;
+    justify-content: center;
+    filter: grayscale(1);
+}
+
+.volver1:hover {
+    box-shadow: 0 0 5px $color4;
+    text-shadow: 0 0 5px $color4;
+    text-decoration: none;
+    color: $color4;
+    filter: grayscale(0);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "img1 img2 img3";
+}
+
+@each $card in card1,card2,card3 {
+    .#{$card} {
+        margin: 15px;
+        height: 650px;
+        width: 350px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 3fr 2fr repeat(3, 1fr);
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5";
+        border-radius: 10px;
+        background-color: $color1;
+        transition: all 1s;
+    }
+}
+
+@each $card in card1,card2,card3 {
+    .#{$card}:hover {
+        transition: all 2s;
+        transform: scale(1.05);
+        box-shadow: 0 0 7px $color4;
+    }
+}
+@each $img in img1, img2, img3 {
+    .card-#{$img} {
+        background-color: $color3;
+        height: 315px;
+        width: 100%;
+        grid-area: card1;
+        border-radius: 10px;
+    }
+}
+
+.cardh1 {
+    grid-area: card2;
+    background-color: $color1;
+    text-shadow: 0 0 3px $color4;
+}
+
+.acom:hover {
+    text-decoration: none;
+    color: $color4;
+}
+
+.cardh4 {
+    grid-area: card3;
+    background-color: $color1;
+    text-align: center;
+}
+
+.cardp {
+    grid-area: card4;
+    background-color: $color1;
+    text-align: center;
+}
+
+.cardmap {
+    grid-area: card5;
+    background-color: $color1;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.cardmap:hover {
+    text-decoration: none;
+    color: $color4;
+    text-shadow: 0 0 5px $color4;
+}
+
+
+//__________________________________________________________________________________________________________
+
+
+.animate__flip {
+    animation-delay: 2s;
+    animation-duration: 2.5s;
+}
+
+h1 {
+    color: $color4;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    font-family: $font1;
+}
+
+
+.f-letter::first-letter {
+    color: $color3; //rgb(175, 6, 6);
+    font-size: 45px;
+    font-weight: bold;
+    // text-shadow: 0 0 5px white;
+    // background-color: #1a1a1ac0;
+}
+
+.bio {
+    color: $color4;
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+    font-family: $font7;
+    text-align: center;
+    background-color: $colorform;
+    border-radius: 10px;
+}
+
+.bio2 {
+    color: $color4;
+    padding: 10px;
+    margin: 0px;
+    font-size: 30px;
+    font-family: $font7;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.623);
+}
+
+.animate__flipInY {
+    animation-delay: 3s;
+    animation-duration: 4s;
+}
+
+.foto {
+    width: auto;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "foto1 foto2 foto3";
+}
+
+.fotos {
+    background-image: url(./Background/dorsos.png);
+    grid-area: foto2;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 50%;
+    transition: all 0.9s;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+@each $foto in foto1,
+foto2,
+foto3 {
+    .#{$foto} {
+        grid-area: $foto;
+    }
+}
+
+@each $foto in foto1,
+foto2,
+foto3 {
+    .#{$foto}:hover {
+        background: url(./Background/#{$foto}.jpg);
+        background-size: cover;
+        background-position: center;
+        grid-area: $foto;
+        border-radius: 10px;
+        box-shadow: 0 0 15px $color4;
+        border: solid 3px $color4;
+        transition: all 0.9s;
+
+    }
+}
+
+
+@each $act in act1,
+act2,
+act3 {
+    .#{$act}:active {
+        transform: rotate(180deg);
+        transform: scale(1.02);
+        background-image: url(./Background/#{$act}.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+//_____________________________________________________________________________________________________________
+
+.show0 {
+    color: #fff;
+    background-color: #1a1a1acb;
+    font-size: 32px;
+    height: 60px;
+    font-family: $font11;
+    padding-bottom: 5px;
+
+}
+
+.showtipo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "tipo1 tipo1 Bio1 Bio1"
+        "tipo2 tipo2 Bio1 Bio1"
+        "Bio2 Bio2 tipo3 tipo3"
+        "Bio2 Bio2 tipo4 tipo4"
+        "tipo5 tipo5 Bio3 Bio3"
+        "tipo6 tipo6 Bio3 Bio3"
+        "Bio4 Bio4 tipo7 tipo7"
+        "Bio4 Bio4 tipo8 tipo8";
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 1.09s;
+    line-height: 25px;
+    height: auto;
+
+}
+
+
+@each $tipo in tipo1,
+tipo2,
+tipo5,
+tipo6 {
+    .show-#{$tipo} {
+        color: $color4;
+        grid-area: $tipo;
+        border: solid 2px $color5;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        background-color: $color2;
+        filter: sepia(1);
+        transition: all 1.09s;
+        text-shadow: 0 0 5px $color5;
+        font-size: 20px;
+        font-family: 'Poltawski Nowy', serif;
+    }
+}
+
+@each $tipo in tipo3,
+tipo4,
+tipo7,
+tipo8 {
+    .show-#{$tipo} {
+        color: $color4;
+        grid-area: $tipo;
+        border: solid 2px $color5;
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+        background-color: $color1;
+        filter: sepia(1);
+        transition: all 1.09s;
+        text-shadow: 0 0 5px $color5;
+        font-size: 20px;
+        font-family: 'Poltawski Nowy', serif
+    }
+}
+
+@each $tipo in tipo1,
+tipo3,
+tipo5,
+tipo7 {
+    .show-#{$tipo} {
+        &.titulo {
+            font-size: 30px;
+            height: 90px;
+        }
+    }
+}
+
+
+@each $tipo in tipo1,
+tipo2,
+tipo3,
+tipo4,
+tipo5,
+tipo6,
+tipo7,
+tipo8 {
+    .show-#{$tipo}:hover {
+        filter: sepia(0);
+        transition: all 1.09s;
+        border: solid 2px $color4;
+        box-shadow: 0 0 5px $color4;
+    }
+}
+
+@each $Bio in Bio1,
+Bio2,
+Bio3,
+Bio4 {
+    .img#{$Bio} {
+        height: 400px;
+        width: 80vh;
+        grid-area: $Bio;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        border: solid $color4 2px;
+        box-shadow: 0 0 5px $color4;
+    }
+}
+
+//_____________________________________________________________________________________________________________
+
+.img {
+    width: 100vh * 1.5;
+    height: auto;
+}
+
+.carousel-item {
+    &.active {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//_____________________________________________________________________________________________________________
+
+.formulario1 {
+    background-color: $colorform;
+    border-radius: 10px;
+    font-family: $font8;
+}
+
+.formulario {
+    color: $color4;
+    display: inline;
+    text-align: center;
+    font-family: $font10;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    place-items: center;
+}
+
+input {
+    color: $color4;
+    background-color: #1a1a1a;
+}
+
+input::placeholder {
+    color: $color5;
+    text-transform: capitalize;
+
+}
+
+.act:focus {
+    background-color: $color1;
+    box-shadow: 0 0 3px white;
+}
+
+label {
+    background-color: rgba(247, 48, 51, 0.486);
+    margin: 5px;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.enviar {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    background-color: $color1;
+    font-weight: bold;
+    color: $color4;
+    text-shadow: 0 0 5px #1a1a1a;
+    font-family: $font9;
+    text-align: center;
+}
+
+.enviar:hover {
+    box-shadow: 0 0 5px $color4;
+}
+
+.reset {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    background-color: $color2;
+    font-weight: bold;
+    color: azure;
+    text-shadow: 0 0 5px #1a1a1a;
+    font-family: $font9;
+    text-align: center;
+}
+
+.reset:hover {
+    box-shadow: 0 0 5px $color4;
+}
+
+//===============================================================================================
+//                                          FOOTER                                              |
+//===============================================================================================
+
+
+footer {
+    background-color: $color2;
+    transition: all 1.09s;
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+footer:hover {
+    transition: all 1.09s;
+    filter: grayscale(0%);
+}
+
+#pfooter {
+    color: $color4;
+    padding: 10px;
+    margin: 0px;
+    font-family: $font11;
+    font-size: 35px;
+}
+
+.redes {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    background-color: $color2;
+    width: 100%;
+}
+
+.subir {
+    height: 45px;
+    width: 45px;
+    background-color: $color5;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 1px;
+    color: $color4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 45px;
+    font-size: 30px;
+}
+
+.animate__bounceIn {
+    animation-delay: 5s;
+    animation-duration: 3s
+}
+
+.subir:hover {
+    background-color: #1BD741;
+    text-decoration: none;
+    color: $color4;
+}
+
+@media only screen and (max-width: 768px) {
+    .principal {
+        background-position: initial;
+        display: flex;
+        align-items: start;
+        justify-content: space-around;
+    }
+
+    .animate__animated {
+        animation-delay: 0s;
+
+        .animate__backInLeft {
+            animation-delay: 0s;
+            animation-duration: 1s;
+        }
+    }
+
+
+    .navbar-nav {
+        display: inline;
+        height: auto;
+    }
+
+    .navbar .navbar-expand-md {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #logo {
+        height: 100px;
+        width: 600p;
+    }
+
+    .navbar-toggler {
+        font-size: 27px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 2px;
+        margin: 10px;
+        display: flex;
+        justify-content: end;
+        text-shadow: 0 0 5px black;
+    }
+
+    .boton1 {
+        width: 160px;
+        height: 45px;
+        font-size: 20px;
+        padding: 5px 10px;
+        right: 23%;
+    }
+
+    .principalbio {
+        height: 2000px;
+    }
+
+    .bio {
+        font-size: 20px;
+    }
+
+    .nav-link:hover {
+        font-size: 28px;
+    }
+
+    .presentacion {
+        height: auto;
+    }
+
+
+    .cards {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3";
+        place-items: center;
+    }
+
+    @each $card in card1,
+    card2,
+    card3 {
+        .#{$card} {
+            height: 650px;
+            width: auto;
+        }
+    }
+
+    @each $img in img1,
+    img2,
+    img3 {
+        .card-#{$img} {
+            height: 50vh;
+            // width: 100%;
+        }
+    }
+
+
+    .principalshow {
+        background-image: url(./Background/background6.png);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: auto;
+    }
+
+    .principalbio {
+        height: auto;
+        width: auto;
+        background-color: black;
+    }
+
+    .foto {
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "foto1"
+            "foto2"
+            "foto3";
+        place-items: center;
+
+    }
+
+    .principalshow {
+        background-image: url(./Background/background6.png);
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        width: auto;
+    }
+
+    .show0 {
+        font-size: 22px;
+    }
+
+    .showtipo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "tipo1"
+            "tipo2"
+            "Bio1"
+            "Bio1"
+            "tipo3"
+            "tipo4"
+            "Bio2"
+            "Bio2"
+            "tipo5"
+            "tipo6"
+            "Bio3"
+            "Bio3"
+            "tipo7"
+            "tipo8"
+            "Bio4"
+            "Bio4";
+    }
+
+    @each $Bio in Bio1,
+    Bio2,
+    Bio3,
+    Bio4 {
+        .img#{$Bio} {
+            height: 100%;
+            width: 100%;
+
+        }
+    }
+
+    @each $tipo in tipo2,
+    tipo4,
+    tipo6,
+    tipo8 {
+        .show-#{$tipo} {
+            &.p {
+                font-size: 16px;
+            }
+        }
+
+    }
+
+    @each $tipo in tipo1,
+    tipo3,
+    tipo5,
+    tipo7 {
+        .show-#{$tipo} {
+            &.titulo {
+                font-size: 22px;
+                height: 90px;
+            }
+        }
+    }
+
+    .img {
+        width: 100vh;
+        height: auto;
+    }
+
+    .item1 {
+        background-size: cover;
+        background-position-y: top;
+    }
+
+    .item6 {
+        background-size: cover;
+        background-position-y: center;
+    }
+
+    .principalcontacto {
+        background-image: url(./Background/background8.jpg);
+        background-size: inherit;
+        height: auto;
+        width: auto;
+    }
+
+    .formulario {
+        font-size: 14px;
+        display: grid;
+        place-items: center;
+    }
+
+
+    .formulario1 {
+        font-size: 18px;
+        padding: 5px;
+        margin: 5px;
+        background-color: $colorform;
+        font-family: $font9;
+        box-shadow: 0 0 5px $color4;
+        border-radius: 10px;
+    }
+
+    h4 {
+        font-family: $font9;
+        background-color: $color1;
+        border-radius: 10px;
+    }
+
+    #icoment {
+        text-align: center;
+    }
+
+    .pfooter {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+
+    #pfooter {
+        font-size: 21px;
+        padding: 2px;
+    }
+
+    .redes2 {
+        font-size: 25px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+
+    .subir {
+        height: 50px;
+        width: 50px;
+        right: 1vw;
+        bottom: 15vh;
+        line-height: 20px;
+        font-size: 30px;
+    }
+
+}
